@@ -31,3 +31,5 @@ VNDK_SP_LIBRARIES := \
     libz \
     libbinderthreadstate \
     libprocessgroup
+    libutilscallstack \
+    libdexfile
