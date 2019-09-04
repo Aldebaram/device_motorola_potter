@@ -229,6 +229,8 @@ VENDOR_SECURITY_PATCH := 2018-12-01
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy-minimal
+
 
 # Sensor
 USE_SENSOR_MULTI_HAL := true
