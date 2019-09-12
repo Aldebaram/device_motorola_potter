@@ -19,10 +19,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
 
-# Inherit from potter device
-$(call inherit-product, device/motorola/potter/device.mk)
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common Pixel Experience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
