@@ -338,8 +338,18 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service \
-    libsensorndkbridge
+    libsensorhub \
+    motosh \
+    sensorhub.msm8953 \
+    sensors.msm8953 \
+    sensors.rp \
+    sensors.tof \
+    sensors.tof.vl53l0
+
+# Shims
+PRODUCT_PACKAGES += \
+    libgpu_mapper_shim \
+    libqsap_shim
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
