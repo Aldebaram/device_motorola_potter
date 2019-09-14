@@ -25,3 +25,6 @@ VNDK_SP_LIBRARIES := \
     libpng \
     libunwind \
     libutils \
+    libz \
+    libbinderthreadstate \
+    libprocessgroup
